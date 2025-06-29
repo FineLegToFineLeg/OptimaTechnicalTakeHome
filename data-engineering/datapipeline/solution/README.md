@@ -38,7 +38,7 @@ The executable script runs the notebooks, in order, for the results.csv and race
 1. Run the following command to install all of the requirements for this script
 
 ```bash
-pip install -r requirements.txt
+pip install -r installation.txt
 ```
 
 2. Use the following command to ensure the pipeline is being run in the correct location:
