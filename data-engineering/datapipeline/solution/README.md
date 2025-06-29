@@ -20,6 +20,19 @@ The solution is made up of 5 notebooks and a main executable script to run the p
 - NB_4_Gold
 - main.py
 
+The executable script runs the notebooks, in order, for the results.csv and races.csv files to generate jsons in the required outputs. Note that the pipeline has been structured using the medallion archietecutre and has been implemented with scalability in mind in order to allow other files to be added into the mini data platform if required.
+
+**The following requirements have been met:**
+- Develop a data pipeline that produces JSON files which have the same structure as below.
+- Each element in the list should be for one race from the races.csv file.
+- You should produce one file per year available in the source data.
+- Your JSON files should be called stats_{year}.json, one for each year and be placed in the results folder.
+- If the time is not available in races.csv, use 00:00:00.
+- If the JSON value for a key is always a number, represent it as such rather than a string.
+- Unit tests and some logging is included for functions found in NB_1_Common Functions.
+- Notes in the [Future](#future) of this file outline the tools you might use to deploy this pipeline to a cloud provider and what kind of considerations you'd need to make in doing so.
+- Further considerations and improvements to this solution are also discussed.
+
 ## Installation
 
 1. Run the following command to install all of the requirements for this script
